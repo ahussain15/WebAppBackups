@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Hello
+        </title>
+    </head>
+    <body>
+        <h3>Hello from {{name}}! <br></h3>
+        Today is {{month}}-{{date}}-{{year}}. <br>
+        Here are some places you can find a calculus:
+        <ul>
+           {{#each places}}
+           <li>{{this}}</li>
+           {{/each}}
+        </ul>
+    </body>
+</html>
