@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Facts about {{topic}}
+        </title>
+    </head>
+    <body>
+        Here are some facts about {{topic}}:
+        <ul>
+            {{#each facts}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <a href="/">Home</a>
+    </body>
+</html>
