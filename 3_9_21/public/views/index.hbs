@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Hello
+        </title>
+    </head>
+    <body>
+        <h3>Hello from {{name}}! <br></h3>
+        Today is {{month}}-{{date}}-{{year}}. <br>
+        <br>
+        What are you looking for?
+        <ul>
+           <li><a href="./cat">Dog</a></li>
+           <li><a href="./dog">Cat</a></li>
+           <li><a href="./fish">Fish</a></li>
+        </ul>
+        Want to query?
+        <ul>
+            <li><a href="/pet?type=dog">Dog</a></li>
+            <li><a href="/pet?type=cat">Cat</a></li>
+            <li><a href="/pet?type=fish">Fish</a></li>
+        </ul>
+        <a href="./apod">Astronomy Picture of the Day</a>
+    </body>
+</html>
