@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Facts about {{topic}}
+        </title>
+    </head>
+    <body>
+        Here are some facts about {{topic}}:
+        <ul>
+            {{#each facts}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <form>
+            <label>Topic:</label>
+            <input type="text" name="topic" id="topic" value="red">
+            <label>Number:</label>
+            <input type="text" name="num" id="num" value="5">
+            <button>Submit</button>
+        </form>
+        <a href="/">Home</a>
+    </body>
+</html>
