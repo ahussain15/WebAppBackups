@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+            h2{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Weather
+        </title>
+    </head>
+    <body>
+        <h2>Weather</h2>
+        <b>Location Coordinates: </b>{{obj.geometry.coordinates}}
+        <h4>Hourly Forecast Table</h4>
+        <table border="1" cellpadding="10">
+        <tr>
+        <td><b>Time</b></td>
+        <td><b>Temperature</b></td>
+        <td><b>Wind</b></td>
+        <td><b>Sky Condition</b></td> </tr>
+        <tr>
+        <td>{{getTime obj2.properties.periods.[0].startTime}}</td>
+        <td>{{obj2.properties.periods.[0].temperature}}&#730{{obj2.properties.periods.[0].temperatureUnit}}</td>
+        <td>{{obj2.properties.periods.[0].windSpeed}}, {{obj2.properties.periods.[0].windDirection}}</td>
+        <td><img src={{obj2.properties.periods.[0].icon}} alt="sky-icon" style="width:50;height:50;"> {{obj2.properties.periods.[0].shortForecast}}</td> </tr>
+        <tr>
+        <td>{{getTime obj2.properties.periods.[1].startTime}}</td>
+        <td>{{obj2.properties.periods.[1].temperature}}&#730{{obj2.properties.periods.[1].temperatureUnit}}</td>
+        <td>{{obj2.properties.periods.[1].windSpeed}}, {{obj2.properties.periods.[1].windDirection}}</td>
+        <td><img src={{obj2.properties.periods.[1].icon}} alt="sky-icon" style="width:50;height:50;"> {{obj2.properties.periods.[1].shortForecast}}</td> </tr>
+        <tr>
+        <td>{{getTime obj2.properties.periods.[2].startTime}}</td>
+        <td>{{obj2.properties.periods.[2].temperature}}&#730{{obj2.properties.periods.[2].temperatureUnit}}</td>
+        <td>{{obj2.properties.periods.[2].windSpeed}}, {{obj2.properties.periods.[2].windDirection}}</td>
+        <td><img src={{obj2.properties.periods.[2].icon}} alt="sky-icon" style="width:50;height:50;"> {{obj2.properties.periods.[2].shortForecast}}</td> </tr>
+        <tr>
+        <td>{{getTime obj2.properties.periods.[3].startTime}}</td>
+        <td>{{obj2.properties.periods.[3].temperature}}&#730{{obj2.properties.periods.[3].temperatureUnit}}</td>
+        <td>{{obj2.properties.periods.[3].windSpeed}}, {{obj2.properties.periods.[3].windDirection}}</td>
+        <td><img src={{obj2.properties.periods.[3].icon}} alt="sky-icon" style="width:50;height:50;"> {{obj2.properties.periods.[3].shortForecast}}</td> </tr>
+        <tr>
+        <td>{{getTime obj2.properties.periods.[4].startTime}}</td>
+        <td>{{obj2.properties.periods.[4].temperature}}&#730{{obj2.properties.periods.[4].temperatureUnit}}</td>
+        <td>{{obj2.properties.periods.[4].windSpeed}}, {{obj2.properties.periods.[4].windDirection}}</td>
+        <td><img src={{obj2.properties.periods.[4].icon}} alt="sky-icon" style="width:50;height:50;"> {{obj2.properties.periods.[4].shortForecast}}</td> </tr>
+        </table>
+        <br>
+        <a href="/">Home</a>
+    </body>
