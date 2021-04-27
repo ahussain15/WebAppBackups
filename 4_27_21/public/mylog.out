@@ -1,0 +1,830 @@
+Ion login link:
+https://ion.tjhsst.edu/oauth/authorize?response_type=code&client_id=o2DF2GQsQMu5SrMDGBNN3fvHwKedwHG5p07SnGQ6&scope=read&redirect_uri=https%3A%2F%2Fahussain.sites.tjhsst.edu%2Fionauth_login
+Express server started
+At 1
+1 done
+https://api.weather.gov/points/35,-76
+*** https://api.weather.gov/points/35,-76
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/35,-76",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -76,
+            35
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/35,-76",
+        "@type": "wx:Point",
+        "cwa": "MHX",
+        "forecastOffice": "https://api.weather.gov/offices/MHX",
+        "gridId": "MHX",
+        "gridX": 82,
+        "gridY": 41,
+        "forecast": "https://api.weather.gov/gridpoints/MHX/82,41/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/MHX/82,41/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/MHX/82,41",
+        "observationStations": "https://api.weather.gov/gridpoints/MHX/82,41/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.998526999999996,
+                    35.073231
+                ]
+            },
+            "properties": {
+                "city": "Ocracoke",
+                "state": "NC",
+                "distance": {
+                    "value": 8144.0314496520004,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 180,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/AMZ156",
+        "timeZone": "America/New_York",
+        "radarStation": "KMHX"
+    }
+}
+At 3
+3 done
+TypeError: /site/public/views/weather.hbs: Cannot read property 'slice' of undefined
+    at Object.<anonymous> (/site/public/routes/weather.js:71:16)
+    at Object.wrapper (/site/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:15:19)
+    at Object.eval [as main] (eval at createFunctionContext (/site/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), <anonymous>:13:104)
+    at main (/site/node_modules/handlebars/dist/cjs/handlebars/runtime.js:208:32)
+    at ret (/site/node_modules/handlebars/dist/cjs/handlebars/runtime.js:212:12)
+    at ret (/site/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:519:21)
+    at /site/node_modules/hbs/lib/hbs.js:84:19
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:75:3)
+At 1
+1 done
+https://api.weather.gov/points/35,-78
+*** https://api.weather.gov/points/35,-78
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/35,-78",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -78,
+            35
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/35,-78",
+        "@type": "wx:Point",
+        "cwa": "MHX",
+        "forecastOffice": "https://api.weather.gov/offices/MHX",
+        "gridId": "MHX",
+        "gridX": 10,
+        "gridY": 32,
+        "forecast": "https://api.weather.gov/gridpoints/MHX/10,32/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/MHX/10,32/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/MHX/10,32",
+        "observationStations": "https://api.weather.gov/gridpoints/MHX/10,32/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.966108000000006,
+                    34.959651999999998
+                ]
+            },
+            "properties": {
+                "city": "Kenansville",
+                "state": "NC",
+                "distance": {
+                    "value": 5446.4126128462003,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 325,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/NCZ090",
+        "county": "https://api.weather.gov/zones/county/NCC061",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/NCZ090",
+        "timeZone": "America/New_York",
+        "radarStation": "KRAX"
+    }
+}
+At 3
+3 done
+TypeError: /site/public/views/weather.hbs: Cannot read property 'slice' of undefined
+    at Object.<anonymous> (/site/public/routes/weather.js:71:16)
+    at Object.wrapper (/site/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:15:19)
+    at Object.eval [as main] (eval at createFunctionContext (/site/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), <anonymous>:13:104)
+    at main (/site/node_modules/handlebars/dist/cjs/handlebars/runtime.js:208:32)
+    at ret (/site/node_modules/handlebars/dist/cjs/handlebars/runtime.js:212:12)
+    at ret (/site/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:519:21)
+    at /site/node_modules/hbs/lib/hbs.js:84:19
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:75:3)
+At 1
+1 done
+https://api.weather.gov/points/35,-77
+*** https://api.weather.gov/points/35,-77
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/35,-77",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77,
+            35
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/35,-77",
+        "@type": "wx:Point",
+        "cwa": "MHX",
+        "forecastOffice": "https://api.weather.gov/offices/MHX",
+        "gridId": "MHX",
+        "gridX": 46,
+        "gridY": 36,
+        "forecast": "https://api.weather.gov/gridpoints/MHX/46,36/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/MHX/46,36/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/MHX/46,36",
+        "observationStations": "https://api.weather.gov/gridpoints/MHX/46,36/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.998097000000001,
+                    35.045369000000001
+                ]
+            },
+            "properties": {
+                "city": "James City",
+                "state": "NC",
+                "distance": {
+                    "value": 5047.7850756395001,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 181,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/NCZ194",
+        "county": "https://api.weather.gov/zones/county/NCC049",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/NCZ194",
+        "timeZone": "America/New_York",
+        "radarStation": "KMHX"
+    }
+}
+At 3
+3 done
+TypeError: /site/public/views/weather.hbs: Cannot read property 'slice' of undefined
+    at Object.<anonymous> (/site/public/routes/weather.js:71:16)
+    at Object.wrapper (/site/node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js:15:19)
+    at Object.eval [as main] (eval at createFunctionContext (/site/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), <anonymous>:13:104)
+    at main (/site/node_modules/handlebars/dist/cjs/handlebars/runtime.js:208:32)
+    at ret (/site/node_modules/handlebars/dist/cjs/handlebars/runtime.js:212:12)
+    at ret (/site/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:519:21)
+    at /site/node_modules/hbs/lib/hbs.js:84:19
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:75:3)
+At 1
+1 done
+https://api.weather.gov/points/35,-77
+*** https://api.weather.gov/points/35,-77
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/35,-77",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77,
+            35
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/35,-77",
+        "@type": "wx:Point",
+        "cwa": "MHX",
+        "forecastOffice": "https://api.weather.gov/offices/MHX",
+        "gridId": "MHX",
+        "gridX": 46,
+        "gridY": 36,
+        "forecast": "https://api.weather.gov/gridpoints/MHX/46,36/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/MHX/46,36/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/MHX/46,36",
+        "observationStations": "https://api.weather.gov/gridpoints/MHX/46,36/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.998097000000001,
+                    35.045369000000001
+                ]
+            },
+            "properties": {
+                "city": "James City",
+                "state": "NC",
+                "distance": {
+                    "value": 5047.7850756395001,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 181,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/NCZ194",
+        "county": "https://api.weather.gov/zones/county/NCC049",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/NCZ194",
+        "timeZone": "America/New_York",
+        "radarStation": "KMHX"
+    }
+}
+At 3
+3 done
+At 1
+1 done
+https://api.weather.gov/points/35,-77
+*** https://api.weather.gov/points/35,-77
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/35,-77",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77,
+            35
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/35,-77",
+        "@type": "wx:Point",
+        "cwa": "MHX",
+        "forecastOffice": "https://api.weather.gov/offices/MHX",
+        "gridId": "MHX",
+        "gridX": 46,
+        "gridY": 36,
+        "forecast": "https://api.weather.gov/gridpoints/MHX/46,36/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/MHX/46,36/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/MHX/46,36",
+        "observationStations": "https://api.weather.gov/gridpoints/MHX/46,36/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.998097000000001,
+                    35.045369000000001
+                ]
+            },
+            "properties": {
+                "city": "James City",
+                "state": "NC",
+                "distance": {
+                    "value": 5047.7850756395001,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 181,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/NCZ194",
+        "county": "https://api.weather.gov/zones/county/NCC049",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/NCZ194",
+        "timeZone": "America/New_York",
+        "radarStation": "KMHX"
+    }
+}
+At 3
+3 done
+user landed at page
+At 1
+1 done
+https://api.weather.gov/points/38.8051,-77.0471
+*** https://api.weather.gov/points/38.8051,-77.0471
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/38.8051,-77.0471",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77.0471,
+            38.805100000000003
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/38.8051,-77.0471",
+        "@type": "wx:Point",
+        "cwa": "LWX",
+        "forecastOffice": "https://api.weather.gov/offices/LWX",
+        "gridId": "LWX",
+        "gridX": 96,
+        "gridY": 66,
+        "forecast": "https://api.weather.gov/gridpoints/LWX/96,66/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/LWX/96,66/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/LWX/96,66",
+        "observationStations": "https://api.weather.gov/gridpoints/LWX/96,66/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.074307000000005,
+                    38.791581999999998
+                ]
+            },
+            "properties": {
+                "city": "Huntington",
+                "state": "VA",
+                "distance": {
+                    "value": 2796.1605242874002,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 57,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/VAZ054",
+        "county": "https://api.weather.gov/zones/county/VAC510",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/VAZ054",
+        "timeZone": "America/New_York",
+        "radarStation": "KLWX"
+    }
+}
+At 3
+3 done
+user landed at page
+At 1
+1 done
+https://api.weather.gov/points/38.8051,-77.0471
+*** https://api.weather.gov/points/38.8051,-77.0471
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/38.8051,-77.0471",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -77.0471,
+            38.805100000000003
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/38.8051,-77.0471",
+        "@type": "wx:Point",
+        "cwa": "LWX",
+        "forecastOffice": "https://api.weather.gov/offices/LWX",
+        "gridId": "LWX",
+        "gridX": 96,
+        "gridY": 66,
+        "forecast": "https://api.weather.gov/gridpoints/LWX/96,66/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/LWX/96,66/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/LWX/96,66",
+        "observationStations": "https://api.weather.gov/gridpoints/LWX/96,66/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.074307000000005,
+                    38.791581999999998
+                ]
+            },
+            "properties": {
+                "city": "Huntington",
+                "state": "VA",
+                "distance": {
+                    "value": 2796.1605242874002,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 57,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/VAZ054",
+        "county": "https://api.weather.gov/zones/county/VAC510",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/VAZ054",
+        "timeZone": "America/New_York",
+        "radarStation": "KLWX"
+    }
+}
+At 3
+3 done
+At 1
+1 done
+https://api.weather.gov/points/43,-79
+*** https://api.weather.gov/points/43,-79
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/43,-79",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -79,
+            43
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/43,-79",
+        "@type": "wx:Point",
+        "cwa": "BUF",
+        "forecastOffice": "https://api.weather.gov/offices/BUF",
+        "gridId": "BUF",
+        "gridX": 30,
+        "gridY": 51,
+        "forecast": "https://api.weather.gov/gridpoints/BUF/30,51/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/BUF/30,51/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/BUF/30,51",
+        "observationStations": "https://api.weather.gov/gridpoints/BUF/30,51/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.954886999999999,
+                    42.986989000000001
+                ]
+            },
+            "properties": {
+                "city": "Grandyle Village",
+                "state": "NY",
+                "distance": {
+                    "value": 3944.0436365676001,
+                    "unitCode": "unit:m"
+                },
+                "bearing": {
+                    "value": 291,
+                    "unitCode": "unit:degrees_true"
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/NYZ010",
+        "county": "https://api.weather.gov/zones/county/NYC029",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/NYZ010",
+        "timeZone": "America/New_York",
+        "radarStation": "KBUF"
+    }
+}
+At 3
+3 done
