@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+            h2{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Game
+        </title>
+    </head>
+    <body>
+        <h2>Play Hangman</h2>
+        Guess the word. Each letter guessed incorrectly will cause the hanging to proceed. <br> 
+        <br>
+        <div id="feedback">
+        </div>
+        <br>
+        <div id="gallows">
+        </div>
+        <br>
+        <div id="letters">
+        </div>
+        <br>
+        <div id="input">
+            <label>Guess a letter:</label>
+            <input type="text" name="guess" id="guess">
+            <button onclick="processGuess()">Submit</button>
+        </div>
+        <script type="text/javascript">
+            var all_words = ["two", "impolite", "jazzy", "bone", "maniacal", "smiling", "aboard", "water", "expansion", "record", "rainy", "dam", "society", "hang", "place", "stocking", "endurable", "happy"];
+            var randomWord = all_words[Math.floor(Math.random() * all_words.length)];
+            var display = new Array(randomWord.length);
+            for(var i = 0; i < display.length; i++){
+                display[i] = "-";
+            }
+            var hangProgress = ["", 
+            "<br><br><br><br><br><br>=========", 
+            "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;|<br>&nbsp;/|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;|<br>&nbsp;/|\\&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========", 
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;|<br>&nbsp;/|\\&nbsp;&nbsp;|<br>&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>=========",
+            "&nbsp;&nbsp;+---+<br>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|<br>&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;|<br>&nbsp;/|\\&nbsp;&nbsp;|<br>&nbsp;/&nbsp;\\&nbsp;&nbsp;|<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>========="];
+            var incorrect = 0;
+            var letters = document.getElementById('letters');
+            letters.innerHTML = display.join("");
+            var input = document.getElementById('guess');
+            var gallows = document.getElementById('gallows');
+            var feedback = document.getElementById('feedback');
+            function checkGuess(guess){
+                return (guess.length == 1 && (guess.toLowerCase() != guess.toUpperCase()));
+            }
+            function processGuess(){
+                var guess = input.value;
+                if(checkGuess(guess) && incorrect < hangProgress.length-1 && display.includes("-")){
+                    if(randomWord.includes(guess.toLowerCase())){
+                        var indices = [];
+                        for(var i = 0; i < randomWord.length; i++){
+                            if(randomWord[i] == guess.toLowerCase()){
+                                indices.push(i);
+                            }
+                        }
+                        for(var i = 0; i < indices.length; i++){
+                            display[indices[i]] = guess;
+                        }
+                        letters.innerHTML = display.join("");
+                        if(!display.includes("-")){
+                            feedback.innerHTML = "<h3>Yay! You win!</h3>";
+                        }
+                        else{
+                            feedback.innerHTML = "Correct!";
+                        }
+                    }
+                    else{
+                        incorrect++;
+                        gallows.innerHTML = hangProgress[incorrect];
+                        feedback.innerHTML = "Try Again.";
+                    }
+                }
+                else{
+                    if(!display.includes("-")){
+                        feedback.innerHTML = "<h3>Yay! You win!</h3>";
+                    }
+                    if(incorrect >= hangProgress.length-1){
+                        feedback.innerHTML = "<h3>Oh no! The hanging is completed!</h3>";
+                    }
+                    if(!checkGuess(guess)){
+                        feedback.innerHTML = "Invalid input.";
+                    }
+                }
+            }
+        </script>
+        <br>
+        <br>
+        <button onClick="window.location.reload();">New Game</button>
+        <br>
+        <br>
+        <a href="/">Home</a>
+    </body>
