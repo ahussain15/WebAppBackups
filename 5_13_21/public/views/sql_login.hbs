@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            SQL Login
+        </title>
+    </head>
+    <body>
+        <h2>Welcome!</h2>
+        Nice to meet you, {{full_name}} ({{id}}).
+        <br>
+        <br>
+        You can experiment with SQL here.
+        <br>
+        <br>
+        <br>
+        <br>
+        <form>
+            <label>Insert Word</label>
+            <input type="text" name="word" id="word" value="random">
+            <label>Insert Number</label>
+            <input type="text" name="number" id="number" value="0">
+            <button>Submit</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <a href="/sql_logout">Logout</a> <br>
+        <br>
+        <br>
+        <br>
+        <a href="/">Home</a> 
+    </body>

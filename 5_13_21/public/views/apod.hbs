@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family:"Courier New", monospace;
+            }
+            h3{
+                font-family:"Courier New", monospace;
+            }
+            h2{
+                font-family:"Courier New", monospace;
+            }
+        </style>
+        <title>
+            Astronomy Picture of the Day -- NASA
+        </title>
+    </head>
+    <body>
+        <h2>Astronomy Picture of the Day -- NASA</h2>
+        <h3>Date:</h3>
+        {{date}}<br>
+        <h3>Title:</h3>
+        {{title}}<br>
+        <h3>Credit:</h3>
+        {{copyright}}<br>
+        <h3>Description:</h3>
+        {{explanation}}<br>
+        <h3>Image:</h3>
+        <a href={{url}}>Link</a> <br>
+        <img src={{url}} alt={{title}} style="width:250;height:250;"><br>
+        <br>
+        <form>
+            <label>Choose another date:</label>
+            <input type="date" name="date" id="date">
+            <button>Submit</button>
+        </form>
+        <a href="/">Home</a>
+    </body>
