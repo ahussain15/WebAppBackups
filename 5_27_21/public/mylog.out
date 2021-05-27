@@ -1,0 +1,191 @@
+Ion login link:
+https://ion.tjhsst.edu/oauth/authorize?response_type=code&client_id=o2DF2GQsQMu5SrMDGBNN3fvHwKedwHG5p07SnGQ6&scope=read&redirect_uri=https%3A%2F%2Fahussain.sites.tjhsst.edu%2Fionauth_login
+Express server started
+Other Words
+ random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes
+{
+  info: {
+    id: 35129,
+    ion_username: '2021ahussain',
+    sex: 'Female',
+    title: null,
+    display_name: 'Aaliya Hussain',
+    full_name: 'Aaliya Hussain',
+    short_name: 'Aaliya',
+    first_name: 'Aaliya',
+    middle_name: '',
+    last_name: 'Hussain',
+    nickname: '',
+    tj_email: '2021ahussain@tjhsst.edu',
+    emails: [ 'aaliya.amay@gmail.com' ],
+    grade: { number: 12, name: 'senior' },
+    graduation_year: 2021,
+    user_type: 'student',
+    phones: [],
+    websites: [],
+    counselor: {
+      id: 165,
+      url: 'https://ion.tjhsst.edu/api/profile/165?format=json',
+      user_type: 'counselor',
+      username: 'kwmcaleer',
+      full_name: 'Kacey McAleer',
+      first_name: 'Kacey',
+      last_name: 'McAleer'
+    },
+    address: null,
+    picture: 'https://ion.tjhsst.edu/api/profile/35129/picture?format=jpg',
+    is_eighth_admin: false,
+    is_announcements_admin: false,
+    is_teacher: false,
+    is_student: true,
+    absences: 0
+  },
+  words: ' random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes',
+  numbers: ' 0 53 123456 33 222 2359 566 21 33333 21566 21566 21566 21566 30001 98'
+}
+Other Words
+ random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap
+{
+  info: {
+    id: 35129,
+    ion_username: '2021ahussain',
+    sex: 'Female',
+    title: null,
+    display_name: 'Aaliya Hussain',
+    full_name: 'Aaliya Hussain',
+    short_name: 'Aaliya',
+    first_name: 'Aaliya',
+    middle_name: '',
+    last_name: 'Hussain',
+    nickname: '',
+    tj_email: '2021ahussain@tjhsst.edu',
+    emails: [ 'aaliya.amay@gmail.com' ],
+    grade: { number: 12, name: 'senior' },
+    graduation_year: 2021,
+    user_type: 'student',
+    phones: [],
+    websites: [],
+    counselor: {
+      id: 165,
+      url: 'https://ion.tjhsst.edu/api/profile/165?format=json',
+      user_type: 'counselor',
+      username: 'kwmcaleer',
+      full_name: 'Kacey McAleer',
+      first_name: 'Kacey',
+      last_name: 'McAleer'
+    },
+    address: null,
+    picture: 'https://ion.tjhsst.edu/api/profile/35129/picture?format=jpg',
+    is_eighth_admin: false,
+    is_announcements_admin: false,
+    is_teacher: false,
+    is_student: true,
+    absences: 0
+  },
+  words: ' random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap',
+  numbers: ' 0 53 123456 33 222 2359 566 21 33333 21566 21566 21566 21566 30001 98 0 53 123456 33 222 2359 566 21 33333 21566 21566 21566 21566 30001 98 333'
+}
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:278:15)
+    at ServerResponse.setHeader (node:_http_outgoing:563:11)
+    at ServerResponse.header (/site/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/site/node_modules/express/lib/response.js:170:12)
+    at done (/site/node_modules/express/lib/response.js:1008:10)
+    at /site/node_modules/hbs/lib/hbs.js:90:11
+    at Object.done (/site/node_modules/hbs/lib/async.js:74:20)
+    at /site/node_modules/hbs/lib/hbs.js:85:20
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:75:3)
+Other Words
+ random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap
+{
+  info: {
+    id: 35129,
+    ion_username: '2021ahussain',
+    sex: 'Female',
+    title: null,
+    display_name: 'Aaliya Hussain',
+    full_name: 'Aaliya Hussain',
+    short_name: 'Aaliya',
+    first_name: 'Aaliya',
+    middle_name: '',
+    last_name: 'Hussain',
+    nickname: '',
+    tj_email: '2021ahussain@tjhsst.edu',
+    emails: [ 'aaliya.amay@gmail.com' ],
+    grade: { number: 12, name: 'senior' },
+    graduation_year: 2021,
+    user_type: 'student',
+    phones: [],
+    websites: [],
+    counselor: {
+      id: 165,
+      url: 'https://ion.tjhsst.edu/api/profile/165?format=json',
+      user_type: 'counselor',
+      username: 'kwmcaleer',
+      full_name: 'Kacey McAleer',
+      first_name: 'Kacey',
+      last_name: 'McAleer'
+    },
+    address: null,
+    picture: 'https://ion.tjhsst.edu/api/profile/35129/picture?format=jpg',
+    is_eighth_admin: false,
+    is_announcements_admin: false,
+    is_teacher: false,
+    is_student: true,
+    absences: 0
+  },
+  words: ' random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap',
+  numbers: ' 0 53 123456 33 222 2359 566 21 33333 21566 21566 21566 21566 30001 98 333'
+}
+Other Words
+ random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap we
+{
+  info: {
+    id: 35129,
+    ion_username: '2021ahussain',
+    sex: 'Female',
+    title: null,
+    display_name: 'Aaliya Hussain',
+    full_name: 'Aaliya Hussain',
+    short_name: 'Aaliya',
+    first_name: 'Aaliya',
+    middle_name: '',
+    last_name: 'Hussain',
+    nickname: '',
+    tj_email: '2021ahussain@tjhsst.edu',
+    emails: [ 'aaliya.amay@gmail.com' ],
+    grade: { number: 12, name: 'senior' },
+    graduation_year: 2021,
+    user_type: 'student',
+    phones: [],
+    websites: [],
+    counselor: {
+      id: 165,
+      url: 'https://ion.tjhsst.edu/api/profile/165?format=json',
+      user_type: 'counselor',
+      username: 'kwmcaleer',
+      full_name: 'Kacey McAleer',
+      first_name: 'Kacey',
+      last_name: 'McAleer'
+    },
+    address: null,
+    picture: 'https://ion.tjhsst.edu/api/profile/35129/picture?format=jpg',
+    is_eighth_admin: false,
+    is_announcements_admin: false,
+    is_teacher: false,
+    is_student: true,
+    absences: 0
+  },
+  words: ' random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap random apple bubbles hairpin slime umbrella friends car cake igloo igloo igloo igloo open yes tap we',
+  numbers: ' 0 53 123456 33 222 2359 566 21 33333 21566 21566 21566 21566 30001 98 333 0 53 123456 33 222 2359 566 21 33333 21566 21566 21566 21566 30001 98 333 2'
+}
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:278:15)
+    at ServerResponse.setHeader (node:_http_outgoing:563:11)
+    at ServerResponse.header (/site/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/site/node_modules/express/lib/response.js:170:12)
+    at done (/site/node_modules/express/lib/response.js:1008:10)
+    at /site/node_modules/hbs/lib/hbs.js:90:11
+    at Object.done (/site/node_modules/hbs/lib/async.js:74:20)
+    at /site/node_modules/hbs/lib/hbs.js:85:20
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:75:3)
